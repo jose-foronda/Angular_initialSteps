@@ -3,7 +3,7 @@
  * 22. Desestructuración de argumentos
  */
 
-interface Product {
+export interface Product {
   description: string;
   price: number;
 }
@@ -30,7 +30,7 @@ function computeTaxes1(productos: Product[]): [number, number] {
 }
 
 /**Method 2 */
-function computeTaxes2(productos: Product[]): [number, number] {
+export function computeTaxes2(productos: Product[]): [number, number] {
   let total = 0;
 
   productos.forEach(({ price }) => {
